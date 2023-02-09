@@ -4,6 +4,7 @@ function teste() {
     let res = document.querySelector("#res");
   
     res.innerHTML = `Olá! ${ex1.toUpperCase()}, é um prazer te conhecer`;
+    
   } button.addEventListener("click",teste)
 
   

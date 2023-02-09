@@ -1,12 +1,17 @@
-function teste() {
+
+
+function teste(){
+
   let ex1 = document.querySelector("#ex1").value;
   let res = document.querySelector("#res");
 
-  if(ex1.length === 0){
-    alert("ESCREVA UMA INFORMAÇÃO VÁLIDA");
-  } else {
-    res.innerHTML = `HELLO WORD!!! <br> SEJA BEM-VINDO ${ex1.toUpperCase()}`;
-  }
-}
+if(ex1.length===0){
+  alert("Preencha o Campo NOME!")
+} else {
+  res.innerHTML = "";
+  res.innerHTML += `<p>HELLO WORD!!! <br> Seja Bem-Vindo ${ex1.toUpperCase()}!</p>`;
 
+
+}
   
+}
