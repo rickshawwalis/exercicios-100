@@ -18,7 +18,7 @@ section {
     font-family:'Times New Roman', Times, serif;
     background-color: white;
     width: 500px;
-    height: 400px;
+    height: 450px;
     margin: 40px auto;
     box-shadow: 1px 2px 3px;
     border: 1px solid;
@@ -32,7 +32,7 @@ ul{
     justify-content: center;
     align-items: center;
     align-content: center;
-    gap: 15px;
+    gap: 5px;
 }
 
 a{
@@ -41,6 +41,7 @@ a{
 }
 
 li{
+    text-align: center;
     box-shadow: 1px 2px 1px;
     border-radius: 15px;
     display: flex;
@@ -55,7 +56,7 @@ li{
     padding: 10px;
     width: 100px;
     cursor: pointer;
-    margin: 10px;
+    margin: 5px;
 }
 
 li:hover{
@@ -63,7 +64,7 @@ color: red;
 }
 
 footer {
-    margin: 50px;
+    margin: 100px;
     color: white;
     text-align: center;
     font-style: italic;
