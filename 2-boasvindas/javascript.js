@@ -4,7 +4,7 @@ function teste() {
   let res = document.querySelector("#res");
 
   if (ex1.length===0) {
-    alert("Preencha o campo Abaixo!")
+    alert("Preencha o campo abaixo!")
   } else {
     res.innerHTML = " "
     res.innerHTML = `Olá! ${ex1.toUpperCase()}, é um prazer te conhecer`;

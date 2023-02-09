@@ -6,7 +6,7 @@ function teste(){
   let res = document.querySelector("#res");
 
 if(ex1.length===0){
-  alert("Preencha o Campo Abaixo!")
+  alert("Preencha o Campo abaixo!")
 } else {
   res.innerHTML = "";
   res.innerHTML += `<p>HELLO WORD!!! <br> Seja Bem-Vindo ${ex1.toUpperCase()}!</p>`;
