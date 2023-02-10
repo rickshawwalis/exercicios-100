@@ -7,7 +7,7 @@ let notaAluno = () => {
   let res = document.querySelector("#res");
   let media = (Number(nota1) + Number(nota2)) / 2
 
-  if (nomeAluno.lenght==0 || nota1==0 || nota2==0) {
+  if (nomeAluno.length==0 || nota1==0 || nota2==0) {
 alert("Preencha os campos")
   }
   else {

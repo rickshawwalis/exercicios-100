@@ -5,7 +5,7 @@ function teste() {
   const numeroRes = Number(numero1) + Number(numero2)
   const res = document.querySelector("#res")
 
-  if(numero1==0 || numero2==0){
+  if(numero1.length==0 || numero2.length==0){
 alert("Preencha o campo")
   } else{
     res.innerHTML = " "
