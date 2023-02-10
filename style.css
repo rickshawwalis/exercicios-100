@@ -63,8 +63,9 @@ li:hover {
 }
 
 footer {
-    margin: 100px;
+    margin: 500px;
     color: white;
     text-align: center;
     font-style: italic;
+    background-color: rebeccapurple;
 }
