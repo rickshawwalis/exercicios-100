@@ -10,9 +10,10 @@ let calculo = () => {
     alert("Preencha o dado do campo");
   } else {
     res.innerHTML = "";
-    res.innerHTML += `<p>Numero ${numero}<p>`;
-    res.innerHTML += `<p>Antecessor de ${numero} --> ${resAnt}<p>`;
-    res.innerHTML += `<p>Sucessor de ${numero} --> ${resSuc}<p>`;
+    res.innerHTML =
+      `<p>Numero ${numero}<p>
+    <p>Antecessor de ${numero} --> ${resAnt}<p>
+    <p>Sucessor de ${numero} --> ${resSuc}<p>`
     res.style.textAlign = 'justify'
   };
 }; button.addEventListener("click", calculo);
