@@ -17,6 +17,7 @@
       <p>${numero*10} dm</p>
       <p>${numero*100} cm</p>
       <p>${numero*1000} mm</p>`
+      res.style.textAlign = 'justify'
     };
   };
 

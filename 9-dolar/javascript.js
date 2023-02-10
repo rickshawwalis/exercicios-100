@@ -14,6 +14,7 @@ let calculor = () => {
     res.innerHTML =
       `<p>Você digitou --> R$ ${numero}
       <p>Considerando o dolar (US$1,00 = R$3,45), isso vale cerca de --> US$ ${dolar.toFixed(2)}</p>`
+      res.style.textAlign = 'justify'
   };
 };
 
