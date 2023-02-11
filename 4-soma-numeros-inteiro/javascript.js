@@ -4,11 +4,11 @@ function teste() {
   const numero2 = document.querySelector("#numero2").value;
   const res = document.querySelector("#res")
 
-  if (numero1.length == 0 || numero2.length == 0) {
+  if (numero1 == "" || numero2 == "") {
     alert("Preencha o campo")
   } else {
     res.innerHTML = " "
-      `<p>Primeiro número: ${numero1}</p>
+    res.innerHTML = `<p>Primeiro número: ${numero1}</p>
    <p>Segundo número: ${numero2}</p>
     <p>Resultado da soma: ${Number(numero1) + Number(numero2)}</p>`;
 

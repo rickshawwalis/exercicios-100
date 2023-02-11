@@ -4,7 +4,7 @@ function teste() {
   const largura = document.querySelector("#numero2").value;
   const res = document.querySelector("#res");
 
-  if (altura == 0 || largura == 0) {
+  if (altura == "" || largura == "") {
     alert("Preencha os dados");
   } else {
     res.innerHTML = " ";

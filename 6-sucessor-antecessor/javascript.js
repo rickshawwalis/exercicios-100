@@ -6,10 +6,10 @@ let calculo = () => {
   let resSuc = Number(numero) + 1;
   let resAnt = Number(numero) - 1;
 
-  if (numero.length == 0) {
+  if (numero =="") {
     alert("Preencha o dado do campo");
   } else {
-    res.innerHTML = "";
+    res.innerHTML = " ";
     res.innerHTML =
       `<p>Numero ${numero}<p>
     <p>Antecessor de ${numero} --> ${resAnt}<p>

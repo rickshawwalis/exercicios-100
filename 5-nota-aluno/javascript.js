@@ -6,7 +6,7 @@ let notaAluno = () => {
   let button = document.querySelector("#button");
   let res = document.querySelector("#res");
 
-  if (nomeAluno.length == 0 || nota1 == 0 || nota2 == 0) {
+  if (nomeAluno.length == "" || nota1 == "" || nota2 == "") {
     alert("Preencha os campos")
   }
   else {

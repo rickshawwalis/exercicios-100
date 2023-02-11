@@ -7,7 +7,7 @@ let calculor = () => {
   let dolar = Number(numero) / 3.45;
 
 
-  if (numero.length == 0) {
+  if (numero == "") {
     alert("Digite um número");
   } else {
     res.innerHTML = " "

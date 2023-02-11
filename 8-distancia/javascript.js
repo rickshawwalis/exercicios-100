@@ -6,7 +6,7 @@
     let button1 = document.querySelector("#button");
    
 
-    if (numero.length == 0) {
+    if (numero == "") {
       alert("Digite um número");
     } else {
       res.innerHTML = " "

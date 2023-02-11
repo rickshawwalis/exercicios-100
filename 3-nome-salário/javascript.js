@@ -5,7 +5,7 @@ function teste() {
   let res = document.querySelector("#res");
 
 
-  if (nome.length == 0 || salario.length == 0) {
+  if (nome.length == "" || salario == "") {
     alert("É necessário preencher todos os campos abaixo!")
   } else {
     res.innerHTML = " "

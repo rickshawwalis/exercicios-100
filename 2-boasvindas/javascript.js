@@ -3,7 +3,7 @@ function teste() {
   let ex1 = document.querySelector("#ex1").value;
   let res = document.querySelector("#res");
 
-  if (ex1.length===0) {
+  if (ex1.length=="") {
     alert("Preencha o campo abaixo!")
   } else {
     res.innerHTML = " "

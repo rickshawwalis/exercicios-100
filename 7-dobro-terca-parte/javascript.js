@@ -4,11 +4,11 @@
     let numero = document.querySelector("#numero").value;
     let res = document.querySelector("#res");
   
-    let button1 = document.querySelector("#button");
+    let button = document.querySelector("#button");
     let dobro = Number(numero) * 2;
-    let terPart = Number(numero) / 2;
+    let terPart = Number(numero) / 3;
 
-    if (numero.length == 0) {
+    if (numero == "") {
       alert("Digite um número");
     } else {
       res.innerHTML = " "
@@ -18,6 +18,5 @@
       res.style.textAlign = 'justify'
     };
   };
-
   button.addEventListener("click", calculor);
 
