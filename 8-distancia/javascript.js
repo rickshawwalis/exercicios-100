@@ -3,7 +3,7 @@
 
     let numero = document.querySelector("#numero").value;
     let res = document.querySelector("#res");
-    let button1 = document.querySelector("#button");
+    
    
 
     if (numero == "") {
@@ -20,6 +20,6 @@
       res.style.textAlign = 'justify'
     };
   };
-
+  let button1 = document.querySelector("#button");
   button.addEventListener("click", calculor);
 

@@ -1,5 +1,4 @@
 function teste() {
-  const button = document.querySelector("#button");
   const numero1 = document.querySelector("#numero1").value;
   const numero2 = document.querySelector("#numero2").value;
   const res = document.querySelector("#res")
@@ -15,5 +14,7 @@ function teste() {
     res.style.textAlign = 'justify'
   }
 
-} button.addEventListener("click", teste)
+} 
+const button = document.querySelector("#button");
+button.addEventListener("click", teste)
 

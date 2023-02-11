@@ -3,7 +3,6 @@ let calculor = () => {
 
   let numero = document.querySelector("#numero").value;
   let res = document.querySelector("#res");
-  let button1 = document.querySelector("#button");
   let dolar = Number(numero) / 3.45;
 
 
@@ -17,6 +16,6 @@ let calculor = () => {
       res.style.textAlign = 'justify'
   };
 };
-
+let button1 = document.querySelector("#button");
 button.addEventListener("click", calculor);
 

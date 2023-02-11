@@ -3,8 +3,6 @@
 
     let numero = document.querySelector("#numero").value;
     let res = document.querySelector("#res");
-  
-    let button = document.querySelector("#button");
     let dobro = Number(numero) * 2;
     let terPart = Number(numero) / 3;
 
@@ -18,5 +16,6 @@
       res.style.textAlign = 'justify'
     };
   };
+  let button = document.querySelector("#button");
   button.addEventListener("click", calculor);
 

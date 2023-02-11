@@ -3,7 +3,6 @@ let notaAluno = () => {
   let nomeAluno = document.querySelector("#nomeAluno").value;
   let nota1 = document.querySelector("#nota01").value;
   let nota2 = document.querySelector("#nota02").value;
-  let button = document.querySelector("#button");
   let res = document.querySelector("#res");
 
   if (nomeAluno.length == "" || nota1 == "" || nota2 == "") {

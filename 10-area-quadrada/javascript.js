@@ -1,5 +1,5 @@
 function teste() {
-  const button = document.querySelector("#button");
+  
   const altura = document.querySelector("#numero1").value;
   const largura = document.querySelector("#numero2").value;
   const res = document.querySelector("#res");
@@ -16,5 +16,7 @@ function teste() {
 res.style.textAlign = 'justify';
   }
 
-} button.addEventListener("click", teste)
+} 
+const button = document.querySelector("#button");
+button.addEventListener("click", teste)
 
