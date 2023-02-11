@@ -10,7 +10,7 @@ let promocao = () => {
     res.innerHTML =
       `<p>Valor do salário informado: ${salario}</p>
   <p>Valor do aumento (15%): R$ ${(salario* 15) / 100}</p>
-  <P>Valor final do salário: R$ ${salario + ((salario * 5) / 100)}</p>
+  <P>Valor final do salário: R$ ${salario + ((salario * 15) / 100)}</p>
   `
   }
 
