@@ -17,7 +17,6 @@ let bhaskara = () => {
     
   } else {
 
-    let raizes = delta === 0 ? 1 : 2;
     let x1 = (-b + Math.sqrt(delta)) / (2 * a);
     let x2 = (-b - Math.sqrt(delta)) / (2 * a);
 
