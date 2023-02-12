@@ -12,6 +12,7 @@ let promocao = () => {
   <p>Valor do aumento (15%): R$ ${(salario* 15) / 100}</p>
   <P>Valor final do salário: R$ ${salario + ((salario * 15) / 100)}</p>
   `
+  res.style.textAlign = 'justify';
   }
 
 }

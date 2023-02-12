@@ -16,7 +16,7 @@ let aluguelCarro = () => {
       <p>Horas trabalhadas (por dia): ${hora}</p>  
       <p>Valor total: ${diasTrab * hora * 25}</p>
                                 `;
-
+                                res.style.textAlign = 'justify';
   }
 
 };

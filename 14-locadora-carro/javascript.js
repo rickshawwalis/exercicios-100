@@ -17,7 +17,7 @@ let aluguelCarro = () => {
       <p>Valor dias alugado: ${diasAlug * 90}</p>
       <p>Valor km rodado: ${km * 0.20}</p>  
       <p>VALOR TOTAL: ${(diasAlug * 90) + (km * 0.20)}</p>                            `;
-
+      res.style.textAlign = 'justify';
   }
 
 };

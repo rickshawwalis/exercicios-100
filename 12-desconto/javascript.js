@@ -12,6 +12,7 @@ if(produto == ""){
   <p>Valor do desconto (5%): R$ ${(produto * 5) / 100}</p>
   <P>Valor final do produto: R$ ${produto - ((produto * 5) / 100)}</p>
   `
+  res.style.textAlign = 'justify';
 }
 
 }

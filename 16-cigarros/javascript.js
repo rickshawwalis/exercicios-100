@@ -14,6 +14,7 @@ res.innerHTML = ""
     res.innerHTML +=
       `<p>Você fumou ${cigarro} cigarros no período de ${ano} ano(s)</p>
         <p>Você perdeu: ${perdaVida} dias de vida</p>`
+        res.style.textAlign = 'justify';
   }
 };
 let botao = document.querySelector("#button");

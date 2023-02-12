@@ -25,7 +25,7 @@ let bhaskara = () => {
       `<p>Valor de Delta: ${delta}</p>
        <p>Valor de X1: ${x1}</p>
        <p>Valor de X2: ${x2}</p>`;
-
+       res.style.textAlign = 'justify';
   }
 };
 
