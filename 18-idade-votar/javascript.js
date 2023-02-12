@@ -16,6 +16,7 @@ if(anoNascimento == ""){
   } else {
     res.innerHTML = `${idade} anos! Voto opcional`;
   }
+  
 };
 
 let botao = document.querySelector("#button");
