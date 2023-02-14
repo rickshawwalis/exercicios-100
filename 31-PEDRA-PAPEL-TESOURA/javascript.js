@@ -12,6 +12,9 @@ let desconto = () => {
   var img3 = document.createElement('img');
   img3.setAttribute("id", "fotos");
 
+  let opcoes = ["PEDRA", "PAPEL", "TESOURA", "MATEMÁTICA"];
+  let escolha = opcoes[Math.floor(Math.random() * opcoes.length)];
+
   if (fsex[0].checked) {
     tipo = "PEDRA";
     res.innerHTML = ""
@@ -37,7 +40,7 @@ let desconto = () => {
     res.innerHTML += "<p>Eu escolho tesoura</p>"
     img2.setAttribute("src", "./jokenpo/tesoura.jpg")
 
-    res.innerHTML += "<p>Tesoura corta papel, ganhei!</p>"
+    res.innerHTML += "<p>Tesoura corta papel. Ganhei!</p>"
     img3.setAttribute("src", "./jokenpo/tesoura-cortapapel.jpg")
 
     res.style.textAlign = 'justify';
@@ -52,13 +55,12 @@ let desconto = () => {
     res.innerHTML += "<p>Eu escolho pedra</p>"
     img2.setAttribute("src", "./jokenpo/pedra.jpg")
 
-    res.innerHTML += "<p>Pedra quebra tesoura, ganhei!</p>"
+    res.innerHTML += "<p>Pedra quebra tesoura. Ganhei!</p>"
     img3.setAttribute("src", "./jokenpo/pedra-quebra-tesoura.jpg")
     res.style.textAlign = 'justify';
     document.body.style.background = "#992D77";
 
   }
-
   res.appendChild(img1);
   res.appendChild(img2);
   res.appendChild(img3);
