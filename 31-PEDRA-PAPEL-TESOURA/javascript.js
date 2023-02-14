@@ -10,7 +10,7 @@ let desconto = () => {
 
   let opcoes = ["PEDRA", "PAPEL", "TESOURA"];
   let escolha = opcoes[Math.floor(Math.random() * opcoes.length)];
-
+//INPUT 1
   if (fsex[0].checked) {
     tipo = "PEDRA";
     res.innerHTML = ""
@@ -32,7 +32,7 @@ let desconto = () => {
     }
     res.style.textAlign = 'justify';
     document.body.style.background = "#902D01";
-
+//INPUT 2
   } else if (fsex[1].checked) {
     tipo = "PAPEL";
     res.innerHTML = ""
@@ -56,6 +56,7 @@ let desconto = () => {
      res.style.textAlign = 'justify';
     document.body.style.background = "#172D18";
 
+//INPUT 3
   } else if (fsex[2].checked) {
     tipo = "TESOURA";
     res.innerHTML = ""
@@ -73,7 +74,6 @@ let desconto = () => {
    
     } else if (tipo == "TESOURA" && escolha == "TESOURA") {
       img1.setAttribute("src", "./jokenpo/tesouraVStesoura.jpg")
-
       res.innerHTML += "EMPATE !!!"
     }
        res.style.textAlign = 'justify';
