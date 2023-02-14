@@ -4,20 +4,25 @@ let desconto = () => {
 
   let fsex = document.getElementsByName("jokenpo");
   let tipo = "";
-  var img = document.createElement('img');
-  img.setAttribute("id", "fotos");
+
+  var img1 = document.createElement('img');
+  img1.setAttribute("id", "fotos");
+  var img2 = document.createElement('img');
+  img2.setAttribute("id", "fotos");
+  var img3 = document.createElement('img');
+  img3.setAttribute("id", "fotos");
 
   if (fsex[0].checked) {
     tipo = "PEDRA";
+    res.innerHTML = ""
+    res.innerHTML += `<p>VOCÊ ESCOLHEU ${tipo}</p>`;
+    img1.setAttribute("src", "./jokenpo/pedra.jpg")
 
-    res.innerHTML += `VOCÊ ESCOLHEU ${tipo}`;
-    img.setAttribute("src", "./jokenpo/pedra.jpg")
+    res.innerHTML += "<p>Eu escolho papel</p>"
+    img2.setAttribute("src", "./jokenpo/papel.jpg")
 
-    res.innerHTML += "Eu escolho papel"
-    img.setAttribute("src", "./jokenpo/papel.jpg")
-
-    res.innerHTML += "Papel envolve pedra. Ganhei!"
-    img.setAttribute("src", "./jokenpo/papel-enrola-pedra.png")
+    res.innerHTML += "<p>Papel envolve pedra. Ganhei!</p>"
+    img3.setAttribute("src", "./jokenpo/papel-enrola-pedra.png")
 
     res.style.textAlign = 'justify';
     document.body.style.background = "#902D01";
@@ -25,34 +30,38 @@ let desconto = () => {
 
   } else if (fsex[1].checked) {
     tipo = "PAPEL";
-    res.innerHTML += `VOCÊ ESCOLHEU ${tipo}`;
-    img.setAttribute("src", "./jokenpo/papel.jpg")
+    res.innerHTML = ""
+    res.innerHTML += `<p>VOCÊ ESCOLHEU ${tipo}</p>`;
+    img1.setAttribute("src", "./jokenpo/papel.jpg")
 
-    res.innerHTML += "Eu escolho tesoura"
-    img.setAttribute("src", "./jokenpo/tesoura.jpg")
+    res.innerHTML += "<p>Eu escolho tesoura</p>"
+    img2.setAttribute("src", "./jokenpo/tesoura.jpg")
 
-    res.innerHTML += "Tesoura corta papel, ganhei!"
-    img.setAttribute("src", "./jokenpo/tesoura-cortapapel.jpg")
+    res.innerHTML += "<p>Tesoura corta papel, ganhei!</p>"
+    img3.setAttribute("src", "./jokenpo/tesoura-cortapapel.jpg")
 
     res.style.textAlign = 'justify';
     document.body.style.background = "#172D18";
 
   } else if (fsex[2].checked) {
     tipo = "TESOURA";
-    res.innerHTML += `VOCÊ ESCOLHEU ${tipo}`;
-    img.setAttribute("src", "./jokenpo/tesoura.jpg")
+    res.innerHTML = ""
+    res.innerHTML += `<p>VOCÊ ESCOLHEU ${tipo}</p>`;
+    img1.setAttribute("src", "./jokenpo/tesoura.jpg")
 
-    res.innerHTML += "Eu escolho pedra"
-    img.setAttribute("src", "./jokenpo/pedra.jpg")
+    res.innerHTML += "<p>Eu escolho pedra</p>"
+    img2.setAttribute("src", "./jokenpo/pedra.jpg")
 
-    res.innerHTML += "Pedra quebra tesoura, ganhei!"
-    img.setAttribute("src", "./jokenpo/pedra-quebra-tesoura.jpg")
-
+    res.innerHTML += "<p>Pedra quebra tesoura, ganhei!</p>"
+    img3.setAttribute("src", "./jokenpo/pedra-quebra-tesoura.jpg")
     res.style.textAlign = 'justify';
     document.body.style.background = "#992D77";
+
   }
-  res.innerHTML = " "
-  res.appendChild(img);
+
+  res.appendChild(img1);
+  res.appendChild(img2);
+  res.appendChild(img3);
 };
 
 let botao = document.querySelector("#button");
