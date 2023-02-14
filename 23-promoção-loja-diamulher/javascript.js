@@ -1,21 +1,30 @@
-let exercicito = () => {
-
+let desconto = () => {
+  let nome = document.querySelector("#nome").value;
+  let compra = Number(document.querySelector("#compra").value);
   let res = document.querySelector("#res");
-  let anoNascimento = Number(document.querySelector("#anoNascimento").value);
-  let anoAtual = new Date();
-  let idade = anoAtual.getFullYear() - anoNascimento;
 
-  if (anoNascimento == "") {
-    alert("Preencha o campo acima!");
-  }
-
-  if (idade < 18) {
-    res.innerHTML = `Você possui ${idade} anos, não é necessário se apresentar ao Exercito. Aguarde ${18 - idade} anos para se apresentar!`;
+  if (nome == "" || compra == "") {
+    alert("Preencha os campos com valores válidos!");
+    return;
   } else {
-    res.innerHTML = `Você possui ${idade} anos, já deveria ter se apresentado ao Exercito. Você está ${idade - 18} anos atrasado em sua apresentação!`;
-  }
 
-}
+    let fsex = document.getElementsByName("radsex");
+    let descontoH = compra * 5 / 100;
+    let descontoM = compra * 15 / 100;
+    let genero = "";
+
+    if (fsex[0].checked) {
+      genero = "masculino";
+      res.innerHTML = `${nome}, do gênero ${genero}, sua compra de R$ ${compra} receberá 5% de desconto, assim ficará no valor de R$ ${compra - descontoH}.`;
+      res.style.textAlign = 'justify';
+
+    } else if (fsex[1].checked) {
+      genero = "feminino";
+      res.innerHTML = `${nome}, do gênero ${genero}, sua compra de R$ ${compra} receberá 15% de desconto, assim ficará no valor de R$ ${compra - descontoM}.`;
+      res.style.textAlign = 'justify';
+    }
+  }
+};
 
 let botao = document.querySelector("#button");
-botao.addEventListener("click", exercicito);
+botao.addEventListener("click", desconto);

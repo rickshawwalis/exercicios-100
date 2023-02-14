@@ -17,19 +17,31 @@
                 <li><a href="../index.html">MENU</a></li>
             </ul>
 
-            <p> QUESTÃO 22:  Escreva um programa que leia o ano de nascimento de um rapaz e mostre a sua 
-                situação em relação ao alistamento militar.
-                 - Se estiver antes dos 18 anos, mostre em quantos anos faltam para o 
-                alistamento.
-                 - Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do 
-                alistamento. </p>
+            <p> Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos
+                para todos, mas especialmente para mulheres. Faça um programa que leia nome,
+                sexo e o valor das compras do cliente e calcule o preço com desconto. Sabendo
+                que:
+                <br>
+                - Homens ganham 5% de desconto
+                - Mulheres ganham 13% de desconto
+            </p>
 
-            <div id="div01"> <p>Resolução da questão</p><br>
+            <div id="div01">
+                <p>Resolução da questão</p><br>
 
-                <label for="">Informe seu ano de nascimento: </label>
-                <input type="number" name="ex1" id="anoNascimento"> </div>
+                <label for="">Informe seu nome: </label>
+                <input type="text" name="ex1" id="nome" class="a1">
 
-            <div> <input type = "button" value="ENVIAR" id="button"></div>
+                <label for="">Informe o valor da compra: </label>
+                <input type="number" name="ex1" id="compra" class="a1">
+                <div >
+                    <label for="">SEXO: </label>
+                    <input type="radio" name="radsex" id="homem" checked> HOMEM
+                    <input type="radio" name="radsex" id="mulher"> MULHER
+                </div>
+            </div>
+
+            <div> <input type="button" value="ENVIAR" id="button" class="a1"></div>
 
             <div id="res">Preencha o campo acima!</div>
 

@@ -22,7 +22,7 @@ section {
     border: 1px solid;
     background-color: white;
     width: 500px;
-    height: 600px;
+    height: 750px;
     margin: auto;
     margin-top: 80px;
     text-align: center;
@@ -62,7 +62,7 @@ footer {
     font-style: italic;
 }
 
-input {
+.a1 {
     box-shadow: 1px 2px 3px;
     border: 1px solid;
     padding: 3px;
