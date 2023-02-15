@@ -9,8 +9,16 @@ img{
     margin: auto;
 }
 
+#apresentacao{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    width: 900px;
+    margin: auto;
+    color: rgb(255, 255, 255);
+}
 
-p {
+.b1 {
     /*estrutura das letras*/
     text-align: justify;
     width: 250px;
