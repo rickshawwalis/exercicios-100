@@ -3,13 +3,21 @@
     padding: 0px;
 }
 
+img{
+    width: 150px;
+    height: 110px;
+    margin: auto;
+}
+
+
 p {
     /*estrutura das letras*/
     text-align: justify;
     width: 250px;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    margin: auto;
+    font-size: 15px;
+   margin: auto;
+    color: rgb(13, 0, 0);
 }
 
 .a1 {
@@ -24,7 +32,6 @@ p {
     flex-direction: column;
     justify-content: end;
 }
-
 .a3 {
     /*ul*/
     display: flex;
@@ -57,7 +64,7 @@ li {
     color: #fff;
     cursor: pointer;
     border-radius: 10px 100px;
-
+    margin: 10px;
 }
 
 a {
@@ -65,8 +72,6 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
-a:hover {}
 
 #btn {
     /*botão avançar/voltar*/
