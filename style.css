@@ -2,51 +2,74 @@
     margin: 0px;
     padding: 0px;
 }
-.a1 { /*div*/
+
+p {
+    /*estrutura das letras*/
+    text-align: justify;
+    width: 250px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin: auto;
+}
+
+.a1 {
+    /*div*/
     margin: 5px;
     background-color: white;
     border: 1px solid;
     width: 300px;
     height: 300px;
     box-shadow: 1px 2px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
-.a3 {/*ul*/
+.a3 {
+    /*ul*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 
-body { /*toda à página*/
+body {
+    /*toda à página*/
     background: rgb(70, 142, 236);
     font: normal 15pt Arial;
 }
 
-h1 {/*titulo*/
-    margin-top: 10px;
+h1 {
+    /*titulo*/
+    margin: 10px;
     text-align: center;
     color: white;
     font-family: 'Times New Roman', Times, serif;
 }
 
-li{ /*todas li*/
+li {
+    /*todas li*/
     list-style: none;
-    margin-top: 260px;
-    background-color: #20e70e;
+    background-color: #0a8f32;
     display: flex;
     justify-content: center;
     border: 1px solid;
-    
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px 100px;
+
 }
 
-a {/*retira elementos do <a>, sublinhado e cor azul*/
+a {
+    /*retira elementos do <a>, sublinhado e cor azul*/
     text-decoration: none;
     color: inherit;
 }
 
-#btn { /*botão avançar/voltar*/
+a:hover {}
+
+#btn {
+    /*botão avançar/voltar*/
     text-align: center;
     box-shadow: 1px 2px 1px;
     border-radius: 15px;
@@ -62,11 +85,13 @@ a {/*retira elementos do <a>, sublinhado e cor azul*/
     margin: 5px;
 }
 
-li:hover { /*muda a cor ao passar o mouse*/
+a:hover {
+    /*muda a cor ao passar o mouse*/
     color: red;
 }
 
-footer { /*rodapé*/
+footer {
+    /*rodapé*/
     margin: 200px;
     color: white;
     text-align: center;
