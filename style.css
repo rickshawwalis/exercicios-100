@@ -4,16 +4,16 @@
 }
 
 img{
-    width: 150px;
-    height: 110px;
+    width: 140px;
+    height: 100px;
     margin: auto;
 }
 
-#apresentacao{
+#apresentacao{ /*texto inicial*/
     text-align: justify;
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
-    width: 900px;
+    width: 50%;
     margin: auto;
     color: rgb(255, 255, 255);
 }
