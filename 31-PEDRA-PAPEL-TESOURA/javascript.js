@@ -37,7 +37,7 @@ let desconto = () => {
     tipo = "PAPEL";
     res.innerHTML = ""
     res.innerHTML =
-      `<p>->VOCÊ ESCOLHEU ${tipo}</p>
+    `<p>->VOCÊ ESCOLHEU ${tipo}</p>
     <p>->EU ESCOLHO ${escolha}</p>`;
    
     if (tipo == "PAPEL" && escolha == "PEDRA") {
