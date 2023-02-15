@@ -2,45 +2,51 @@
     margin: 0px;
     padding: 0px;
 }
+.a1 { /*div*/
+    margin: 5px;
+    background-color: white;
+    border: 1px solid;
+    width: 300px;
+    height: 300px;
+    box-shadow: 1px 2px 2px;
+}
 
-body {
+.a3 {/*ul*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+body { /*toda à página*/
     background: rgb(70, 142, 236);
     font: normal 15pt Arial;
 }
 
-h1 {
+h1 {/*titulo*/
     margin-top: 10px;
     text-align: center;
     color: white;
     font-family: 'Times New Roman', Times, serif;
 }
 
-section {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: white;
-    width: 550px;
-    height: 450px;
-    margin: 40px auto;
-    box-shadow: 1px 2px 3px;
-    border: 1px solid;
+li{ /*todas li*/
+    list-style: none;
+    margin-top: 260px;
+    background-color: #20e70e;
     display: flex;
-}
-
-ul, #btn {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    flex-wrap: wrap;
     justify-content: center;
+    border: 1px solid;
+    
 }
 
-a {
+a {/*retira elementos do <a>, sublinhado e cor azul*/
     text-decoration: none;
     color: inherit;
 }
 
-#btn{
+#btn { /*botão avançar/voltar*/
     text-align: center;
     box-shadow: 1px 2px 1px;
     border-radius: 15px;
@@ -49,38 +55,18 @@ a {
     color: #fff;
     border: 1px solid #eee;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px #dedada;
+    box-shadow: 1px 2px 3px #dedada;
     padding: 10px;
     width: 100px;
     cursor: pointer;
     margin: 5px;
 }
 
-
-
-
-li {
-    text-align: center;
-    box-shadow: 1px 2px 1px;
-    border-radius: 15px;
-    display: flex;
-    background: #016ABC;
-    color: #fff;
-    border: 1px solid #eee;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px #dedada;
-    padding: 10px;
-    width: 100px;
-    cursor: pointer;
-    margin: 5px;
-
-}
-
-li:hover {
+li:hover { /*muda a cor ao passar o mouse*/
     color: red;
 }
 
-footer {
+footer { /*rodapé*/
     margin: 200px;
     color: white;
     text-align: center;
