@@ -31,7 +31,7 @@ img{
     color: rgb(13, 0, 0);
 }
 
-.btn1 {
+.btn1 {/*botao q vai para tela baixar*/
     display: flex;
     justify-content: center;
     margin-top: 50px;
