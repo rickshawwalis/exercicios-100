@@ -21,6 +21,11 @@ img{
     margin-top: 40px;
 }
 
+.btn1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
 .b1 {
     /*estrutura das letras*/
     text-align: justify;
