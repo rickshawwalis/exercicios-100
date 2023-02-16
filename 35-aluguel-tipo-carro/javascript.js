@@ -14,7 +14,7 @@ let aluguel = () => {
     alert("Preencha os campos!");
     return;
   }
-
+  
   if (tipoCarro[0].checked) {
     tipo = "CARRO POPULAR";
     if (kmRodado <= 100) {
