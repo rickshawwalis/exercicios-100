@@ -8,15 +8,15 @@ let repeticao = () => {
     }
 let contagem = "";
 let i = 1;
-while (i <= numero) {
-  contagem += `${i} `;
-  i++;
+while(i<=numero){
+  contagem += `${i} `
+  i++
 }
-res.innerHTML = `Contagem: ${contagem}`;
+res.innerHTML = `Contagem: ${contagem}`
 }
   let botao = document.querySelector("#button");
   botao.addEventListener("click", repeticao);
-  
+ 
   /* USANDO FOR
   let contagem = "";
   for(let i = 1;i<=numero;i++){
