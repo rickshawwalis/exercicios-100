@@ -18,3 +18,14 @@ res.innerHTML = `<p>Contagem: ${contagem}</p>`
 let botao = document.querySelector("#button");
 botao.addEventListener("click", repeticao);
 
+/* USANDO WHILE
+while (i >= numero) {
+    if (i % 4 == 0) {
+      contagem += `[${i}] `
+    } else {
+      contagem += `${i} `
+    }
+    i--;
+  }
+  res.innerHTML = `<p>Contagem: ${contagem}</p>`
+*/
