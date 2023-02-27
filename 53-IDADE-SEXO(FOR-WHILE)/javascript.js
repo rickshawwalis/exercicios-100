@@ -19,7 +19,7 @@ for (let i = 1; i <= 5; i++) {
     numHomens++;
     somaIdadesHomens += idade;
  
-  } else if (sexo === "F") {
+  } if (sexo === "F") {
     numMulheres++;
    
     if (idade > 20) {
@@ -31,8 +31,8 @@ for (let i = 1; i <= 5; i++) {
 let mediaIdades = somaIdades / 5;
 let mediaIdadesHomens = somaIdadesHomens / numHomens;
 
-document.write("Quantidade de homens cadastrados: " + numHomens);
-document.write("Quantidade de mulheres cadastradas: " + numMulheres);
-document.write("Média de idade do grupo: " + mediaIdades);
-document.write("Média de idade dos homens: " + mediaIdadesHomens);
-document.write("Quantidade de mulheres com mais de 20 anos: " + numMulheresMaisDe20);
+document.write("<br>Quantidade de homens cadastrados: " + numHomens);
+document.write("<br>Quantidade de mulheres cadastradas: " + numMulheres);
+document.write("<br>Média de idade do grupo: " + mediaIdades);
+document.write("<br>Média de idade dos homens: " + mediaIdadesHomens);
+document.write("<br>Quantidade de mulheres com mais de 20 anos: " + numMulheresMaisDe20);
