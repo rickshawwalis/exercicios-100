@@ -16,9 +16,9 @@ for (let i = 1; i <= 5; i++) {
     sexoArr.push(sexo);
     idadeArr.push(idade);
 
-    if (idade == "" || sexo !== "M" && sexo !== "F") {
+    if (isNaN(idade) || idade == "" || sexo !== "M" && sexo !== "F") {
         alert("Preencha corretamente os campos");
-        i--;
+       i--;
     }
 }
 
