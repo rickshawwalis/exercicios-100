@@ -1,38 +1,55 @@
-let numHomens = 0;//Quantidade de homens cadastrados
-let numMulheres = 0;//Quantidade de mulheres cadastradas
-let somaIdades = 0;//Média de idade do grupo
-let somaIdadesHomens = 0;//Média de idade dos homens
-let numMulheresMaisDe20 = 0;//Quantidade de mulheres com mais de 20 anos
+/*
+53) Faça um programa que leia a idade e o sexo de 5 pessoas, mostrando no final:
+a) Quantos homens foram cadastrados
+b) Quantas mulheres foram cadastradas
+c) A média de idade do grupo ok
+d) A média de idade dos homens ok
+e) Quantas mulheres tem mais de 20 anos ok
+*/
+
+let sexoArr = [];
+let idadeArr = [];
 
 for (let i = 1; i <= 5; i++) {
-  let idade = Number(prompt("Informe a idade da pessoa " + i));
-  let sexo = prompt("Informe o sexo da pessoa " + i + " (M ou F)").toUpperCase();
-  if (idade == "" || sexo !== "M" && sexo !== "F") {
+    let sexo = prompt(`Informe o ${i}º sexo, com: M ou F`);
+    let idade = parseFloat(prompt(`Digite a ${i}º idade: `));
+    sexoArr.push(sexo);
+    idadeArr.push(idade);
 
-    alert("Preencha os campos corretamente!")
-   i--; //para que o laço continue perguntando na mesma iteração
-   continue; //para que o laço vá para a próxima iteração
-  }
-  somaIdades += idade;
-
-  if (sexo === "M") {
-    numHomens++;
-    somaIdadesHomens += idade;
- 
-  } if (sexo === "F") {
-    numMulheres++;
-   
-    if (idade > 20) {
-      numMulheresMaisDe20++;
+    if (idade == "" || sexo !== "M" && sexo !== "F") {
+        alert("Preencha corretamente os campos");
+        i--;
     }
-  }
 }
 
-let mediaIdades = somaIdades / 5;
-let mediaIdadesHomens = somaIdadesHomens / numHomens;
+let homemcad = 0;
+let mulhercad = 0;
+let somaIdade = 0;
+let somaHomem = 0;
+let mulher20 = 0;
 
-document.write("<br>Quantidade de homens cadastrados: " + numHomens);
-document.write("<br>Quantidade de mulheres cadastradas: " + numMulheres);
-document.write("<br>Média de idade do grupo: " + mediaIdades);
-document.write("<br>Média de idade dos homens: " + mediaIdadesHomens);
-document.write("<br>Quantidade de mulheres com mais de 20 anos: " + numMulheresMaisDe20);
+for (let i = 0; i < idadeArr.length; i++) {
+    somaIdade += idadeArr[i];
+
+    if (sexoArr[i] === "M") {
+        homemcad++;
+        somaHomem += idadeArr[i];
+    }
+
+    if (sexoArr[i] === "F") {
+        mulhercad++;
+
+        if (idadeArr[i] > 20) {
+            mulher20++;
+        }
+    }
+}
+
+let media = somaIdade / idadeArr.length;
+let medHomem = somaHomem / homemcad;
+
+document.write("A média de idade do grupo: " + media + "<br>");
+document.write("A média de idade dos homens: " + medHomem + "<br>");
+document.write("Quantas mulheres tem mais de 20 anos: " +  mulher20 + "<br>");
+document.write("Quantas mulheres foram cadastradas: " +  mulhercad + "<br>");
+document.write("Quantos homens foram cadastrados: " +  homemcad + "<br>");
