@@ -11,13 +11,14 @@ let altura = [];
 for (let i = 1; i <= 7; i++) {
     let infPeso = parseFloat(prompt(`Informe o ${i}º peso: `));
     let infAltura = parseFloat(prompt(`Informe a ${i}º altura: `));
-    peso.push(infPeso);
-    altura.push(infAltura);
-
+  
     if (isNaN(infPeso)|| isNaN(infAltura)) {
-        alert("Dgite corretamente os dados solicitados!!!");
+        alert("Digite corretamente os dados solicitados!!!");
         i--;
     }
+
+    peso.push(infPeso);
+    altura.push(infAltura);
 }
 
 let peso90 = 0;
@@ -47,12 +48,13 @@ for (let i = 0; i < peso.length; i++) {
         peso100++
     }
 }
+
 let media = mediaAltura / altura.length;
 
-document.write("<br>Qual foi a média de altura do grupo: " + media);
+document.write("<br>Qual foi a média de altura do grupo: " + media.toFixed(2));
 document.write("<br>Quantas pessoas pesam mais de 90Kg: " + peso90);
-document.write("<br>Quantas pessoas que pesam menos de 50Kg tem menos de 1.60m: " + peso50 +
-    "pessoas tem menos de 50kg e" + altura160 + "tem menos de 1.60m");
+document.write("<br>Quantas pessoas que pesam menos de 50Kg têm menos de 1.60m: " + peso50 +
+    " pessoas têm menos de 50kg e " + altura160 + " têm menos de 1.60m.");
 
-document.write("<br>Quantas pessoas que medem mais de 1.90m pesam mais de 100Kg: " + altura190 +
-    "pessoas tem mais de 1.90m" + peso100 + "tem mais de 100kg");
+document.write("<br>Quantas pessoas que medem mais de 1.90m e pesam mais de 100Kg: " + altura190 +
+    " pessoas têm mais de 1.90m e " + peso100 + " têm mais de 100kg.");  
