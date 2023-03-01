@@ -1,16 +1,24 @@
-
-let numero = 0;
-let soma = 0;
-let continuar = true;
-
-while(continuar) {
-  numero = parseInt(prompt("Digite um número:"));
-
-  if(numero === 1111) {
-    continuar = false;
-  } else {
-    soma += numero;
-  }
+let soma = 0
+let numeros = []
+while(true) {
+    let numero = Number(prompt("Digite um numero "))
+    if(numero == 1111) {
+        if(numeros.length == 0) {
+            alert("Nem tem nada pra somar")
+            break
+        } else {
+            alert("Somatorio chegou ao fim")
+            break
+        }
+    } else {
+        soma+= numero
+        numeros.push(numero)
+    }
+    
 }
 
-console.log("A soma dos números é: " + soma);
+if(numeros.length == 0) {
+    alert("Tente novamente")
+} else {
+    document.write(`Os numeros digitados foram ${numeros} e seu somatorio é ${soma}`)
+}
