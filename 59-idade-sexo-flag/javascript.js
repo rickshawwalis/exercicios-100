@@ -2,7 +2,7 @@ let continuar = true;
 let idade = [];
 
 let maiorIdade = 0;
-let menorIdadeMulher = 0;
+let menorIdadeMulher = Infinity;
 let soma = 0;
 let numHomens = 0;
 
