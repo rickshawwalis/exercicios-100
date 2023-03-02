@@ -16,6 +16,7 @@ while (continuar) {
     }
 
         idade.push(idadeTXT);
+        
         if (idadeTXT > maiorIdade) {
             maiorIdade = idadeTXT;
         }

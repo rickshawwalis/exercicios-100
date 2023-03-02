@@ -12,6 +12,7 @@ while (continuar) {
 
     if (sexoText === "M") {
         totaisSalarios[0] += salarioText;
+        
     } else if (sexoText === "F") {
         totaisSalarios[1] += salarioText;
     }
