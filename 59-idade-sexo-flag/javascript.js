@@ -1,6 +1,4 @@
 let continuar = true;
-let idade = [];
-
 let maiorIdade = 0;
 let menorIdadeMulher = Infinity;
 let soma = 0;
@@ -14,8 +12,6 @@ while (continuar) {
     if (idadeTXT == "" || isNaN(idadeTXT) || sexoTXT !== "M" && sexoTXT !== "F") {
         alert("Preencha corretamente os campos!")
     }
-
-        idade.push(idadeTXT);
         
         if (idadeTXT > maiorIdade) {
             maiorIdade = idadeTXT;

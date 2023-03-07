@@ -1,5 +1,4 @@
 let somaIdades = 0;
-let idades = [];
 let flag = true;
 
 while (flag) {
@@ -8,8 +7,6 @@ while (flag) {
     if (isNaN(idade) || idade <= 0) {
         alert("Digite uma idade válida!");
     }
-
-    idades.push(idade);
 
     if (idade < 999) {
         somaIdades += idade;
@@ -21,5 +18,6 @@ while (flag) {
 }
 
 let mediaIdades = somaIdades / idades.length;
+
 document.write("Média de idade: " + mediaIdades.toFixed(2) + "<br>");
 document.write("Número de alunos: " + idades.length);

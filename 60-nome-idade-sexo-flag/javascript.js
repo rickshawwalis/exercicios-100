@@ -16,11 +16,11 @@ while (continuar) {
     let nome = prompt("Qual é o seu nome?");
     let idade = parseInt(prompt("Qual é a sua idade?"));
     let sexo = prompt("Qual é o seu sexo? (M ou F)").toUpperCase();
-   
-   if(nome == "" || idade == "" || isNaN(idade) || sexo !== "M" && sexo !== "F"){
-    alert("Preencha corretamente o campo!")
-   }
-   
+
+    if (nome == "" || idade == "" || isNaN(idade) || sexo !== "M" && sexo !== "F") {
+        alert("Preencha corretamente o campo!")
+    }
+
     idades.push(idade);
     nomes.push(nome);
     sexos.push(sexo);
@@ -35,17 +35,18 @@ let numHomensMaisDe30 = 0;
 let numMulheresMenosDe18 = 0;
 
 for (let i = 0; i < nomes.length; i++) {
+
+    somaIdades += idades[i];
+
     if (idades[i] > idades[indexPessoaMaisVelha]) {
         indexPessoaMaisVelha = i;
     }
 
-    somaIdades += idades[i];
-
-    if (sexos[i] === "F"){
-        if(idades[i] < idades[indexMulherMaisJovem]) {
-        indexMulherMaisJovem = i;
+    if (sexos[i] === "F") {
+        if (idades[i] < idades[indexMulherMaisJovem]) {
+            indexMulherMaisJovem = i;
+        }
     }
-}
 
     if (sexos[i] === "M" && idades[i] > 30) {
         numHomensMaisDe30++;
@@ -58,8 +59,8 @@ for (let i = 0; i < nomes.length; i++) {
 
 let mediaIdades = somaIdades / nomes.length;
 
-console.log(`A pessoa mais velha é ${nomes[indexPessoaMaisVelha]}`);
-console.log(`A mulher mais jovem é ${nomes[indexMulherMaisJovem]}`);
-console.log(`A média de idade do grupo é ${mediaIdades}`);
-console.log(`Existem ${numHomensMaisDe30} homens com mais de 30 anos`);
-console.log(`Existem ${numMulheresMenosDe18} mulheres com menos de 18 anos`);
+document.write(`A pessoa mais velha é ${nomes[indexPessoaMaisVelha]}`);
+document.write(`A mulher mais jovem é ${nomes[indexMulherMaisJovem]}`);
+document.write(`A média de idade do grupo é ${mediaIdades}`);
+document.write(`Existem ${numHomensMaisDe30} homens com mais de 30 anos`);
+document.write(`Existem ${numMulheresMenosDe18} mulheres com menos de 18 anos`);
