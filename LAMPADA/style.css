@@ -1,0 +1,21 @@
+div{
+    margin: auto;
+    height: 500px;
+    width: 500px;
+    background-color: #E1E1E1;
+}
+p{
+    text-align: justify;
+
+}
+#img{
+    margin: auto;
+    height: 500px;
+    width: 500px; 
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+ 
+}
