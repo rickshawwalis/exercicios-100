@@ -26,3 +26,10 @@ input:hover{
     color: rgb(255, 255, 255) !important;
     border-color: rgb(26, 192, 26) !important;
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    color: white;
+}
