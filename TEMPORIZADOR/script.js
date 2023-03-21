@@ -16,7 +16,7 @@ let c = () => {
   if (minutes == 60) {
     hours++;
     minutes = 0;
-  }
+  };
   tempo.innerHTML =
     `${hours.toString().padStart(2, '0')} : ${minutes.toString().padStart(2, '0')} : ${seconds.toString().padStart(2, '0')}`;
 };
