@@ -5,7 +5,7 @@ let desconto = () => {
   let fsex = document.getElementsByName("jokenpo");
   let tipo = "";
 
-  var img1 = document.createElement('img');
+  let img1 = document.createElement('img');
   img1.setAttribute("id", "fotos");
 
   let opcoes = ["PEDRA", "PAPEL", "TESOURA"];
