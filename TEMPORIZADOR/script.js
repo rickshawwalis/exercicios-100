@@ -33,6 +33,9 @@ pausar.addEventListener("click", () => {//pausar
 
 zerar.addEventListener("click", () => {//zear
   clearInterval(timer);
+  hours = 0;
+  minutes = 0;
+  seconds = 0;
   tempo.innerHTML = "00 : 00 : 00";
 });
 tempo.style.textAlign = 'center';

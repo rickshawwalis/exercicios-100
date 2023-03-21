@@ -19,3 +19,10 @@ section{
 p{
     text-align: center;
 }
+
+input:hover{
+    cursor: pointer; 
+    background-color: rgb(236, 4, 4) !important;
+    color: rgb(255, 255, 255) !important;
+    border-color: rgb(26, 192, 26) !important;
+}
